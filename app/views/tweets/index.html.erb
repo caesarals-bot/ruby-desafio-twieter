@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Tweets</h1>
+
+<div id="tweets">
+  <% @tweets.each do |tweet| %>
+    <%= render tweet %>
+    <button class="btn btn-light d-flex align-items-center">
+      <%= link_to "Show this tweet", tweet,  class: "nav-link" %>
+    </button>
+  <% end %>
+</div>
+
+<button class="btn btn-light d-flex align-items-center">
+  <%= link_to "New tweet", new_tweet_path,  class: "nav-link"  %>
+</button>
+

@@ -1,0 +1,29 @@
+
+<div class="container">
+    <div class="d-flex flex-column ">
+        <div class="mb-2 mt-4">
+            <button class="btn btn-light">
+                <%= image_tag('twitter.svg', class:"img-size") %>
+                <%= link_to 'Home', tweets_path, class: "nav-link" %>
+            </button>
+        </div>
+        <div class="mb-2 ">
+            <button class="btn btn-light d-flex align-items-center">
+                <%= image_tag('house.svg', class:"img-size me-1") %>
+                <%= link_to 'Home', tweets_path, class: "nav-link" %>
+            </button>
+        </div>
+        <div class="mb-2">
+            <button class="btn btn-light d-flex align-items-center">
+                <%= image_tag('campana.svg', class:"img-size me-1") %>
+                <i class="fas fa-user"></i> Notificaciones
+            </button>
+        </div>
+        <div class="mb-2">
+            <button class="btn btn-light d-flex align-items-center">
+                <%= image_tag('mail.svg', class:"img-size me-1") %>
+                <i class="fas fa-envelope"></i> Mensajes
+            </button>
+        </div>
+    </div>
+</div>
